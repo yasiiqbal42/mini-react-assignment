@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+// import {useCallback} from 'react';
 import { useParams } from "react-router-dom";
 import Subscription from "./Subscription";
 import axios from "axios";
@@ -10,7 +11,7 @@ export default function CarDetailMain(props) {
   const getCar = async () => {
     await axios
 
-      .get("https://627cfe98bf2deb7174e560df.mockapi.io/cars/"+id)
+      .get("https://627cfe98bf2deb7174e560df.mockapi.io/cars/" + id)
 
       .then((response) => {
         setCar(response.data);
@@ -22,13 +23,19 @@ export default function CarDetailMain(props) {
   useEffect(() => {
     getCar();
   }, []);
+
+  // const fetchBusinesses = useCallback(() => {
+  //   getCar();
+  // }, []);
+
+  // useEffect(() => {
+  //   fetchBusinesses();
+  // }, [fetchBusinesses]);
+
   return (
     <div className="carDetailsContainer">
-      {console.log(id, car)}
       <div className="carDetailsCard">
-        <span>
-          {"Browse Cars > "+ car.name + " " + car.useable_Battery}
-        </span>
+        <span>{"Browse Cars > " + car.name + " " + car.useable_Battery}</span>
         <div className="availableFrom">
           <p>available from</p>
           <p>{car.available_from}</p>

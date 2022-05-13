@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState} from "react";
+// import {useCallback} from 'react';
 import axios from "axios";
 import { NavLink } from "react-router-dom";
 const Main = () => {
@@ -20,6 +21,14 @@ const Main = () => {
   useEffect(() => {
     getCars();
   }, []);
+
+  // const fetchBusinesses = useCallback(() => {
+  //   getCars();
+  // }, []);
+
+  // useEffect(() => {
+  //   fetchBusinesses();
+  // }, [fetchBusinesses]);
 
   const handleSelect = (e) => {
     const sortValue = e.target.value;
