@@ -1,0 +1,383 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+header {
+  height: 70px;
+}
+
+.brand {
+  display: flex;
+}
+
+.brand img {
+  /* cursor: pointer; */
+  margin: 15px 0 0 0;
+}
+.brand span {
+  margin: 20px 0 0 10px;
+  font-size: 40px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 70px;
+  background-color: black;
+  font-size: 27px;
+  font-weight: bold;
+  color: white;
+}
+
+footer div {
+  margin-right: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 60px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li {
+  padding-left: 2rem;
+}
+
+nav img {
+  height: 70px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 27px;
+}
+
+nav a:hover {
+  color: #ff7bac;
+}
+
+active {
+  color: #ff7bac;
+}
+
+.activeNav {
+  color: #ff7bac;
+}
+
+.signout {
+  font-size: 15px;
+  font-weight: 400;
+}
+
+/* Searching ans Sorting CSS */
+
+.searchSortContainer {
+  height: 30px;
+  margin: 30px 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.searchBar {
+  width: 300px;
+  border: 1px solid #ff7bac;
+  color: #000;
+}
+
+.sortBy {
+  font-size: 27px;
+}
+
+.triangle-up {
+  width: 0;
+  height: 0;
+  border-bottom: 4px solid #ff7bac;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+.triangle-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 4px solid #ff7bac;
+}
+
+.cardContainer {
+  height: calc(100vh - (60px + 160px));
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  justify-content: space-around;
+}
+
+.card {
+  margin-top: 20px;
+  width: 28%;
+  margin-bottom: 50px;
+  height: 450px;
+  border: 1px solid #ff7bac;
+  box-shadow: 11px 12px 4px rgba(255, 123, 172, 0.46);
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.card div {
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+}
+.card div:nth-child(1) {
+  height: 10%;
+  margin: 0;
+  padding-left: 290px;
+  padding-top: 10px;
+}
+
+.card div:nth-child(2) {
+  height: 55%;
+  margin: 0;
+}
+.card div:nth-child(3) {
+  height: 15%;
+  padding-left: 20px;
+  margin: 0;
+}
+.card div:nth-child(4) {
+  height: 20%;
+  margin: 0;
+  padding-left: 20px;
+}
+.card div:nth-child(5) {
+  height: 20%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.card div:nth-child(2) img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.card div:nth-child(5) button{
+  padding: 5px 80px;
+  border: 3px solid black;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.card > div {
+  margin: 30px 0 0 30px;
+}
+.card > div > p {
+  margin: 0;
+}
+
+
+/*****************************************************************************************************************/
+
+/* Browse car css */
+
+.carDetailsContainer {
+  margin-top: 20px;
+  height: calc(100vh - (60px + 30px));
+  /* border: 2px solid black; */
+  border-top: 3px solid rgb(220, 214, 214);
+  display: flex;
+  /* justify-content: space-around; */
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+.carDetailsCard {
+  width: 500px;
+  margin: 50px;
+  border: 1px solid #ff7bac;
+  box-shadow: 11px 12px 4px rgba(255, 123, 172, 0.46);
+  background-color: #fff;
+}
+
+.carDetailsCard div img {
+  width: "50%";
+  height: "70%";
+  margin: 0;
+}
+
+.availableFrom {
+  display: inline;
+  float: right;
+  margin-top: 20px;
+}
+
+.availableFrom > p {
+  margin: 0px 20px 0 0px;
+}
+
+.carDetailsCard:nth-child(1) {
+  width: 800px;
+  border: none;
+  box-shadow: none;
+  /* border: 2px solid black; */
+}
+.booking {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-around; */
+  height: 100%;
+  /* display: flex; */
+  /* justify-content: space-around; */
+}
+
+.booking:nth-child(1) {
+  /* width: 330px; */
+  height: 20%;
+  font-size: 25px;
+  font-weight: 200;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 40px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 50px;
+}
+.booking:nth-child(2) {
+  width: 100%;
+}
+
+.subscription {
+  height: 77%;
+  padding: 20px;
+}
+
+.subscription > div {
+  height: 100px;
+  /* border: 2px solid black; */
+}
+.labelInput {
+  width: 450px;
+  height: 100px;
+  /* border: 2px solid black; */
+}
+
+.labelInput > label {
+  width: 80px;
+  height: 20px;
+  padding: 10px 30px;
+  font-size: 20px;
+  font-weight: 500;
+  /* padding: 30px; */
+  background-color: #ff7bac;
+  color: #fff;
+}
+
+.labelInput > input {
+  width: 45px;
+}
+
+.date {
+  width: 380px;
+  /* border: 1px solid #ff7bac; */
+  box-shadow: 8px 8px 4px rgba(255, 123, 172, 0.46);
+  background-color: #fff;
+}
+.date > input {
+  width: 350px;
+  height: 30px;
+  border: none;
+}
+.date > p > label {
+  font-weight: 200;
+}
+.date > p > input {
+  font-weight: 200;
+}
+
+.buttonParent {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.buttonParent > button {
+  background-color: #ff7bac;
+  font-size: 20px;
+  color: #fff;
+  width: 100%;
+  padding: 15px 60px;
+  border: none;
+}
+
+.cursor {
+  cursor: pointer;
+  margin-right: 40px;
+}
+
+.hidingRadio {
+  display: none;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  height: 200px;
+}
+
+.children-1 {
+  height: 60%;
+  /* background: green; */
+  display: flex;
+  flex-direction: row;
+  margin-left: 30px;
+  font-weight: 400;
+}
+
+.children-2 {
+  height: 30%;
+  font-weight: 500;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-around;
+  /* overflow-y: hidden; */
+}
+
+.grandchild-1 {
+  width: 50%;
+  /* background-color: blue; */
+}
+.grandchild-1 p {
+  margin: 0;
+}
+.grandchild-2 {
+  width: 50%;
+  /* background-color: red; */
+}
+.grandchild-2 p {
+  margin: 0;
+}
+.children-2 div {
+  width: 18%;
+  background-color: black;
+  color: #ff7bac;
+  /* border: 2px solid black; */
+  text-align: center;
+  padding: 20px;
+  font-size: larger;
+}
+
+.under-construction{
+  margin: 40px;
+  font-size: 40px;
+}
